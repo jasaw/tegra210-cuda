@@ -62,11 +62,11 @@ We have 2 options here:
 
 ### Compress the libraries
 
-1. Compress CUDA core libraries
+1. On a Jetson Nano running Ubuntu, compress CUDA core libraries
    - `mkdir -p ~/cuda-10.0-tegra210/usr/local`
    - `cp -arf /usr/local/cuda-10.0 ~/cuda-10.0-tegra210/usr/local`
    - `cd ~`
    - `XZ_OPT=-9 tar cfJ cuda-10.0-tegra210.tar.xz cuda-10.0-tegra210`
-2. Compress CUDA DNN library
+2. On a Jetson Nano running Ubuntu, compress CUDA DNN library
    - `cd ~`
    - `XZ_OPT=-9 tar cfJ libcudnn-7.6.3.28-tegra210.tar.xz libcudnn-7.6.3.28`
