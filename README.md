@@ -59,6 +59,7 @@ We have 2 options here:
    - `cd /tmp/libcudnn-7.6.3.28/dev`
    - `ar x libcudnn7-dev_7.6.3.28-1+cuda10.0_arm64.deb && tar xf data.tar.xz`
    - `mv usr ~/libcudnn-7.6.3.28/dev/`
+5. Remove docs and samples from `/usr/local/cuda-10.0` and `~/libcudnn-7.6.3.28/dev/`.
 
 ### Compress the libraries
 
