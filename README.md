@@ -19,7 +19,7 @@ These were the steps taken to extract and repackage the CUDA libraries.
 
 ### Download JetPack 4.3 libraries.
 
-We have 2 options here:
+We have 3 options here:
 1. Download from the direct links below:
    -  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-cross-aarch64-10-0-local-10.0.326_1.0-1_all.deb
    -  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-ubuntu1804-10-0-local-10.0.326-410.108_1.0-1_amd64.deb
@@ -29,6 +29,13 @@ We have 2 options here:
 2. Download SDK Manager from https://developer.nvidia.com/nvidia-sdk-manager
    - Install the SDK Manager. It is usually installed here: `/opt/nvidia/sdkmanager/sdkmanager-gui`
    - Use it to download JetPack 4.3 for Jetson Nano. At the time of this writing, it has a bug that prevents it from installing the packages automatically.
+
+3. Use SDK Manager to generate `sdkml3_jetpack_l4t_43_ga.json` file, then download straight from the URLs in the file.
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/ubuntu1804/cuda-repo-ubuntu1804-10-0-local-10.0.326-410.108_1.0-1_amd64.deb
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-cross-aarch64-10-0-local-10.0.326_1.0-1_all.deb
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-l4t-10-0-local-10.0.326_1.0-1_arm64.deb
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/libcudnn7_7.6.3.28-1+cuda10.0_arm64.deb
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/libcudnn7-dev_7.6.3.28-1+cuda10.0_arm64.deb
 
 ### Install the downloaded packages
 
