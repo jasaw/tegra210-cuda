@@ -32,7 +32,7 @@ mkdir -p output/libcudnn-${LIBCUDNN_VERSION}/rt
 cd output/libcudnn-${LIBCUDNN_VERSION}/rt
 for f in ${TARGET_DNN_RT_DEB_FILES}
 do
-	unpack_deb "../../dl/$f" 1
+	unpack_deb "../../../dl/$f" 1
 done
 rm -f control.tar.gz data.tar.xz debian-binary _gpgbuilder
 cd ../../..
@@ -41,7 +41,7 @@ mkdir -p output/libcudnn-${LIBCUDNN_VERSION}/dev
 cd output/libcudnn-${LIBCUDNN_VERSION}/dev
 for f in ${TARGET_DNN_DEB_FILES}
 do
-	unpack_deb "../../dl/$f" 1
+	unpack_deb "../../../dl/$f" 1
 done
 rm -f control.tar.gz data.tar.xz debian-binary _gpgbuilder
 cd ../../..
