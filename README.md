@@ -21,9 +21,9 @@ These were the steps taken to extract and repackage the CUDA libraries.
 
 We have 3 options here:
 1. Download from the direct links below:
-   -  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-cross-aarch64-10-0-local-10.0.326_1.0-1_all.deb
-   -  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-ubuntu1804-10-0-local-10.0.326-410.108_1.0-1_amd64.deb
-   -  https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-l4t-10-0-local-10.0.326_1.0-1_arm64.deb
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-cross-aarch64-10-0-local-10.0.326_1.0-1_all.deb
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-ubuntu1804-10-0-local-10.0.326-410.108_1.0-1_amd64.deb
+   - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/cuda-repo-l4t-10-0-local-10.0.326_1.0-1_arm64.deb
    - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/libcudnn7_7.6.3.28-1+cuda10.0_arm64.deb
    - https://developer.nvidia.com/assets/embedded/secure/tools/files/jetpack-sdks/jetpack-4.3/JETPACK_43_b132/libcudnn7-dev_7.6.3.28-1+cuda10.0_arm64.deb
 2. Download SDK Manager from https://developer.nvidia.com/nvidia-sdk-manager
@@ -78,3 +78,8 @@ We have 3 options here:
 2. On a Jetson Nano running Ubuntu, compress CUDA DNN library
    - `cd ~`
    - `XZ_OPT=-9 tar cfJ libcudnn-7.6.3.28-tegra210.tar.xz libcudnn-7.6.3.28`
+
+### Alternatively, run the repack script
+
+1. Place all deb files in the `dl` directory.
+2. Run `./repack_deb_lib.sh`.
